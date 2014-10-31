@@ -1,0 +1,14 @@
+{
+  "name": "inside",
+  "homepage": "https://github.com/stewartknapman/inside",
+  "_release": "229a6a7423",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "229a6a74230845c5caf8576f0fc6068295325d4f"
+  },
+  "_source": "https://github.com/stewartknapman/inside.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/stewartknapman/inside.git",
+  "_direct": true
+}

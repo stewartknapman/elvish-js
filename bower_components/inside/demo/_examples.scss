@@ -1,0 +1,63 @@
+/*
+  Examples:
+  Heres how you do this stuff.
+*/
+
+/* Checkboxes & Radios */
+.form--checkbox, .form--radio {
+  @extend %input-wrapping-label;
+}
+
+/* Buttons */
+.button--link {
+  @extend %button;
+}
+
+.example--highlighted {
+  .button--link,
+  input[type=submit],
+  button {
+    @extend %button-highlight;
+  }
+  
+  .button--highlight-badass {
+    @include highlight_button(#BADA55);
+  }
+  
+  .button--highlight-black-coffee {
+    @include highlight_button(invert(#C0FFEE));
+  }
+  
+  input[type=submit].button--highlight-aboded {
+    @include highlight_button(#AB0DED);
+  }
+  
+  .button--highlight-ebolla {
+    @include highlight_button(#EB011A);
+  }
+}
+
+/* Setting a grid */
+.grid {
+  @extend %grid;
+}
+.grid__col {
+  @extend %grid-col;
+}
+.grid__col--25 {
+  width: 25%;
+}
+.grid__col--30 {
+  width: 30%;
+}
+.grid__col--50 {
+  width: 50%;
+}
+.grid__col--70 {
+  width: 70%;
+}
+
+/* Tables */
+.site__content--tables table {
+  @extend %table;
+}

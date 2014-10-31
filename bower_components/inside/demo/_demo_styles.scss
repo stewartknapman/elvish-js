@@ -1,0 +1,49 @@
+/*
+  Demo styles
+  Just so the demo looks good.
+*/
+
+/* style variables */
+$bg-colour: #f9f9f9;
+$border-small: #ddd solid 1px;
+$border-large: #ddd dashed 1px;
+
+/* Layout */
+.site__container {
+  @extend %container;
+  width: 98%;
+  max-width: 40em;
+  padding: $gutter_horizontal 0;
+  @media (min-width: $breakpoint-sm) {
+    width: 95%;
+  }
+  @media (min-width: $breakpoint-md) {
+    width: 90%;
+  }
+  @media (min-width: $breakpoint-lg) {
+    width: 80%;
+  }
+}
+
+.site__header, .site__content, .site__footer {
+  @extend %grid-col;
+  width: 100%;
+}
+
+.example {
+  padding: $gutter_horizontal $gutter_vertical 0;
+  margin-bottom: $gutter_horizontal;
+  border: $border-large;
+  border-radius: $border_radius;
+}
+
+/* Grid */
+.grid__col {
+  margin-bottom: $gutter_horizontal;
+  border: $border-small;
+}
+
+.grid__content {
+  text-align: center;
+  background: $bg-colour;
+}
