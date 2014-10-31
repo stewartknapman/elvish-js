@@ -1,3 +1,7 @@
+var $ = require('jquery');
+var tengwar = require('tengwar/general-use');
+var fonts = require("tengwar/fonts");
+
 $(document).on('keyup', function(e){
   var $focus = $(document.activeElement);
   var $source = $('.translation-source');
@@ -5,8 +9,17 @@ $(document).on('keyup', function(e){
   if($focus[0] === $source[0]){
     var target = $source.data('target');
     var $target = $(target);
-    var new_text = $source.val();
-    $target.text(new_text);
+    var text = $source.val();
+    
+    var elvish = tengwar.transcribe(text, {
+      font: fonts['annatar'],
+      language: null
+    });
+    
+    $target.text(elvish);
   }
-  
+});
+
+$(function () {
+  $('.translation-source').focus();
 });

@@ -112,4 +112,4 @@ input[type=button]:focus, input[type=reset]:focus, input[type=submit]:focus, but
 
 .site__header, .site__content { width: 100%; }
 
-.translation { padding: 1.5em 4%; margin-bottom: 1.5em; border: #ddd dashed 1px; }
+.translation { padding: 1.5em 4%; margin-bottom: 1.5em; border: #ddd dashed 1px; font-family: Tengwar Annatar; font-size: 2.618em; line-height: 1.14591; margin-bottom: 0.57296em; }
