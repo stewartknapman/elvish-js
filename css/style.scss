@@ -1,0 +1,28 @@
+@import '../bower_components/inside/src/inside.scss';
+
+.site__container {
+  @extend %container;
+  width: 98%;
+  max-width: 40em;
+  padding: $gutter_horizontal 0;
+  text-align: center;
+  @media (min-width: $breakpoint-sm) {
+    width: 95%;
+  }
+  @media (min-width: $breakpoint-md) {
+    width: 90%;
+  }
+  @media (min-width: $breakpoint-lg) {
+    width: 80%;
+  }
+}
+.site__header, .site__content {
+  @extend %grid-col;
+  width: 100%;
+}
+
+.translation {
+  padding: $gutter_horizontal $gutter_vertical;
+  margin-bottom: $gutter_horizontal;
+  border: #ddd dashed 1px;
+}
