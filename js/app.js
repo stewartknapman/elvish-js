@@ -16,7 +16,7 @@ $(document).on('keyup', function(e){
       language: null
     });
     
-    $target.text(elvish);
+    $target.html(elvish);
   }
 });
 
