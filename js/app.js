@@ -12,7 +12,8 @@ $(document).on('keyup', function(e){
     var text = $source.val();
     
     var elvish = tengwar.transcribe(text, {
-      font: fonts['annatar'],
+      font: fonts.annatar,
+      noAchLaut: true,
       language: null
     });
     
