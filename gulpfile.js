@@ -46,6 +46,6 @@ gulp.task('browserify', function () {
     .transform('brfs')                   // include file system
     .transform({ global: true }, 'uglifyify')
     .bundle()
-    .pipe(source('script.js'))             // Pass desired output filename to vinyl-source-stream
-    .pipe(gulp.dest('./js/'));   // Start piping stream to tasks!
+    .pipe(source('elvish_translator.js'))             // Pass desired output filename to vinyl-source-stream
+    .pipe(gulp.dest('./dist/'));   // Start piping stream to tasks!
 });
