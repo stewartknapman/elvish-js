@@ -25,6 +25,5 @@
   padding: $gutter_horizontal $gutter_vertical;
   margin-bottom: $gutter_horizontal;
   border: #ddd dashed 1px;
-  font-family: Tengwar Annatar;
   @include rhythmic_font_size($font_size_h2);
 }
