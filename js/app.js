@@ -2,11 +2,9 @@ var $ = require('jquery');
 var tengwar = require('tengwar/general-use');
 var fonts = require("tengwar/fonts");
 
-$(document).on('keyup', function(e){
-  var $focus = $(document.activeElement);
-  var $source = $('.translation-source');
-  
-  if($focus[0] === $source[0]){
+var translate = function (source, focus) {
+  if(focus === source){
+    var $source = $(source);
     var target = $source.data('target');
     var $target = $(target);
     var text = $source.val();
@@ -19,6 +17,13 @@ $(document).on('keyup', function(e){
     
     $target.html(elvish);
   }
+};
+
+$(document).on('keyup', function(e){
+  var focus = $(document.activeElement)[0];
+  $('.translation-source').each(function () {
+    translate(this, focus);
+  });
 });
 
 $(function () {
