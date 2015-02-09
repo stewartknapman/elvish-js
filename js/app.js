@@ -2,6 +2,13 @@ var $ = require('jquery');
 var tengwar = require('tengwar/general-use');
 var fonts = require("tengwar/fonts");
 
+var init_translation = function () {
+  var focus = $(document.activeElement)[0];
+  $('.translation-source').each(function () {
+    translate(this, focus);
+  });
+};
+
 var translate = function (source, focus) {
   if(focus === source){
     var $source = $(source);
@@ -20,12 +27,13 @@ var translate = function (source, focus) {
 };
 
 $(document).on('keyup', function(e){
-  var focus = $(document.activeElement)[0];
-  $('.translation-source').each(function () {
-    translate(this, focus);
-  });
+  init_translation();
 });
 
 $(function () {
   $('.translation-source').focus();
+  if ($('.translation-source').hasClass('translate-on-load')) {
+    console.log('translate on load');
+    init_translation();
+  }
 });

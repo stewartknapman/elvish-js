@@ -1,0 +1,12 @@
+Previous translator code.
+
+<style><!--
+.embed-container { transform: scale(0.5); position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+--></style>
+<!--<div class="embed-container"><iframe src="http://3rin.gs/tengwar/?q=One%20Ring%20to%20Show%20our%20Love%2C%20One%20Ring%20to%20Bind%20us%2C%0AOne%20Ring%20to%20Seal%20our%20Love%2C%20and%20Forever%20to%20Entwine%20us.&amp;%3Bfont=annatar&amp;%3Bmode=general-use&amp;%3Blanguage=english&amp;%3Bheight=null&amp;mode=general-use&amp;font=annatar&amp;height=null&amp;language=null" style="border: 0;"></iframe></div>
+<p>Click for <a href="/collections/lord-of-the-rings-wedding-ring" style="text-decoration: underline;">Engravable Movie Rings.</a></p>
+<p>You can access the full translator and experiment with other options at their webpage <a href="http://3rin.gs/tengwar/">http://3rin.gs/tengwar/</a></p>
+<p style="text-align: center; margin-bottom: 5px;"><small>(May require Firefox or Chrome web browser to display correctly. <span>We are not experts on the use, translation and writing of elvish languages but we do link to this translator for your convenience to see what your message for engraving might look like when transcribed to elvish and rendered in the Tengwar Annatar italic font.</span>)</small></p>
+--> <!--<textarea class="translation-source" data-target=".translation" placeholder="Type your message here…"></textarea>
+<div class="translation tengwar annatar rendered"></div>
+-->
