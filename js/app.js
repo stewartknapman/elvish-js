@@ -1,6 +1,6 @@
 var $ = require('jquery');
 var tengwar = require('tengwar/general-use');
-var fonts = require("tengwar/fonts");
+var fonts = require('tengwar/fonts');
 
 var ElvishTranslator = function (translation_source) {
   this.translation_source = $(translation_source);
@@ -37,7 +37,7 @@ ElvishTranslator.prototype.translate = function () {
     var elvish = tengwar.transcribe(text, {
       font: fonts.annatar,
       noAchLaut: true,
-      language: null
+      language: 'english'
     });
     
     $target.html(elvish);

@@ -2,3 +2,4 @@
 .sass-*
 *.lock
 *.zip
+node_modules/
