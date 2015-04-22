@@ -31,7 +31,7 @@ ElvishTranslator.prototype.translate = function () {
   var focus = this.get_focused();
   if(focus === this.translation_source[0]){
     var target = this.translation_source.data('target');
-    var $target = $(target);
+    var $target = $(target).first();
     var text = this.translation_source.val();
     
     var elvish = tengwar.transcribe(text, {
