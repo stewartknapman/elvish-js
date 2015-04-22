@@ -9,17 +9,17 @@
   "author": "Stewart Knapman",
   "license": "BSD-2-Clause",
   "devDependencies": {
-    "gulp": "^3.8.7",
-    "gulp-ruby-sass": "~0.7.1",
-    "gulp-autoprefixer": "~1.0.0",
-    "gulp-util": "~3.0.1",
-    "gulp-plumber": "~0.6.5",
-    "tengwar": "~0.1.2",
-    "uglifyify": "~2.5.0",
-    "gulp-jshint": "~1.8.4",
-    "jquery": "~2.1.1",
     "brfs": "^1.2.0",
     "browserify": "^5.11.0",
+    "gulp": "^3.8.7",
+    "gulp-autoprefixer": "~1.0.0",
+    "gulp-jshint": "~1.8.4",
+    "gulp-plumber": "~0.6.5",
+    "gulp-ruby-sass": "~0.7.1",
+    "gulp-util": "~3.0.1",
+    "jquery": "~2.1.1",
+    "tengwar": "^1.2.3",
+    "uglifyify": "~2.5.0",
     "vinyl-source-stream": "^0.1.1"
   }
 }
