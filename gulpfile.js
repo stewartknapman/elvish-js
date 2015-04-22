@@ -41,7 +41,8 @@ gulp.task('lint', function () {
 
 gulp.task('browserify', function () {
   return browserify('./js/app.js', {
-      debug: true                        // with source maps
+      debug: true,                        // with source maps
+      standalone: 'ElvishTranslator'
     })
     .transform('brfs')                   // include file system
     .transform({ global: true }, 'uglifyify')

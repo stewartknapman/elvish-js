@@ -9,6 +9,8 @@
   
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="node_modules/tengwar/tengwar-annatar.css">
+  
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 
 <body>
@@ -27,5 +29,10 @@
   </article>
   
   <script src="dist/elvish_translator.js"></script>
+  <script>
+    $(function () {
+      $('.translation-source').elvishTranslator();
+    });
+  </script>
 </body>
 </html>

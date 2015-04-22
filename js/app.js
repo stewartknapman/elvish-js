@@ -1,9 +1,8 @@
-var $ = require('jquery');
 var tengwar = require('tengwar/general-use');
 var fonts = require('tengwar/fonts');
 
-var ElvishTranslator = function (translation_source) {
-  this.translation_source = $(translation_source);
+var ElvishTranslator = function ($translation_source) {
+  this.translation_source = $translation_source;
   
   this.add_event_listeners();
   this.init_translation();
@@ -44,8 +43,12 @@ ElvishTranslator.prototype.translate = function () {
   }
 };
 
-$(function () {
-  $('.translation-source').each(function () {
-    new ElvishTranslator(this);
+$.fn.elvishTranslator = function () {
+  var _this = this;
+  return _this.each(function () {
+    var $ele = $(this);
+    $ele.data('_elvish_translator', new ElvishTranslator($ele));
   });
-});
+};
+
+module.exports = ElvishTranslator;
