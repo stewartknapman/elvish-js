@@ -21,13 +21,12 @@ ElvishTranslator.prototype.add_event_listeners = function () {
 
 ElvishTranslator.prototype.init_translation = function () {
   if (this.translation_source.hasClass('translate-on-load') && this.translation_source.val() !== '') {
-    this.translation_source.focus();
-    this.translate();
+    this.translate(this.translation_source[0]);
   }
 };
 
-ElvishTranslator.prototype.translate = function () {
-  var focus = this.get_focused();
+ElvishTranslator.prototype.translate = function (focus) {
+  focus = focus || this.get_focused();
   if(focus === this.translation_source[0]){
     var target = this.translation_source.data('target');
     var $target = $(target).first();
